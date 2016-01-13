@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZR8-T1-0af">
+                                <rect key="frame" x="20" y="262" width="280" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="wAR-2N-TYl"/>
+                                </constraints>
+                                <state key="normal" title="二個按鈕">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="popWithTwoBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UI4-qx-7K1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hop-Jp-5Hs">
+                                <rect key="frame" x="20" y="350" width="280" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="sbq-i8-pCa"/>
+                                </constraints>
+                                <state key="normal" title="三個按鈕">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="popWithThreeBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o8z-pG-sYM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKR-la-Z0l">
+                                <rect key="frame" x="20" y="174" width="280" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="BrQ-VG-2MW"/>
+                                </constraints>
+                                <state key="normal" title="一個按鈕">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="popWithOneBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="73b-cZ-3Td"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tKR-la-Z0l" firstAttribute="width" secondItem="ZR8-T1-0af" secondAttribute="width" id="6pX-GL-Yzq"/>
+                            <constraint firstItem="Hop-Jp-5Hs" firstAttribute="width" secondItem="ZR8-T1-0af" secondAttribute="width" id="8Sn-oV-Xeh"/>
+                            <constraint firstItem="ZR8-T1-0af" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PKb-zM-Qif"/>
+                            <constraint firstItem="tKR-la-Z0l" firstAttribute="centerX" secondItem="ZR8-T1-0af" secondAttribute="centerX" id="ScK-GN-2yv"/>
+                            <constraint firstItem="ZR8-T1-0af" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UUK-l2-TMM"/>
+                            <constraint firstItem="Hop-Jp-5Hs" firstAttribute="top" secondItem="ZR8-T1-0af" secondAttribute="bottom" constant="44" id="bri-9o-RIj"/>
+                            <constraint firstItem="ZR8-T1-0af" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="kkb-3L-a31"/>
+                            <constraint firstItem="Hop-Jp-5Hs" firstAttribute="centerX" secondItem="ZR8-T1-0af" secondAttribute="centerX" id="mgs-Wy-SCh"/>
+                            <constraint firstAttribute="trailing" secondItem="ZR8-T1-0af" secondAttribute="trailing" constant="20" id="q4Q-sO-QqT"/>
+                            <constraint firstItem="ZR8-T1-0af" firstAttribute="top" secondItem="tKR-la-Z0l" secondAttribute="bottom" constant="44" id="u4v-IV-oas"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200" y="427"/>
+        </scene>
+    </scenes>
+</document>
